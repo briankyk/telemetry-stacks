@@ -12,7 +12,7 @@ dotenv.load_dotenv()
 broker = os.environ.get("mqttHost")
 port = int(os.environ.get("mqttPort"))
 topic = os.environ.get("mqttTopic")
-client_id = f'hktv-mqtt-{random.randint(0,1000)}'
+client_id = f'server-mqtt-{random.randint(0,1000)}'
 username = os.environ.get("mqttUser")
 password = os.environ.get("mqttSecret")
 
